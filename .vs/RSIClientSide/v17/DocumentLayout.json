@@ -1,0 +1,266 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\niedz\\Desktop\\Projects\\RSIClientSide\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E0905FD5-A79F-4B93-A166-7097BAF075E4}|RSIClientSide\\RSIClientSide.csproj|c:\\users\\niedz\\desktop\\projects\\rsiclientside\\rsiclientside\\repositories\\carsforreservationhardcodedrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0905FD5-A79F-4B93-A166-7097BAF075E4}|RSIClientSide\\RSIClientSide.csproj|solutionrelative:rsiclientside\\repositories\\carsforreservationhardcodedrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0905FD5-A79F-4B93-A166-7097BAF075E4}|RSIClientSide\\RSIClientSide.csproj|c:\\users\\niedz\\desktop\\projects\\rsiclientside\\rsiclientside\\repositories\\carreservationhardcodedrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0905FD5-A79F-4B93-A166-7097BAF075E4}|RSIClientSide\\RSIClientSide.csproj|solutionrelative:rsiclientside\\repositories\\carreservationhardcodedrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0905FD5-A79F-4B93-A166-7097BAF075E4}|RSIClientSide\\RSIClientSide.csproj|c:\\users\\niedz\\desktop\\projects\\rsiclientside\\rsiclientside\\models\\carreservation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0905FD5-A79F-4B93-A166-7097BAF075E4}|RSIClientSide\\RSIClientSide.csproj|solutionrelative:rsiclientside\\models\\carreservation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0905FD5-A79F-4B93-A166-7097BAF075E4}|RSIClientSide\\RSIClientSide.csproj|c:\\users\\niedz\\desktop\\projects\\rsiclientside\\rsiclientside\\models\\carforreservation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0905FD5-A79F-4B93-A166-7097BAF075E4}|RSIClientSide\\RSIClientSide.csproj|solutionrelative:rsiclientside\\models\\carforreservation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0905FD5-A79F-4B93-A166-7097BAF075E4}|RSIClientSide\\RSIClientSide.csproj|c:\\users\\niedz\\desktop\\projects\\rsiclientside\\rsiclientside\\services\\carforreservationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0905FD5-A79F-4B93-A166-7097BAF075E4}|RSIClientSide\\RSIClientSide.csproj|solutionrelative:rsiclientside\\services\\carforreservationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0905FD5-A79F-4B93-A166-7097BAF075E4}|RSIClientSide\\RSIClientSide.csproj|c:\\users\\niedz\\desktop\\projects\\rsiclientside\\rsiclientside\\services\\interfaces\\ireservationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0905FD5-A79F-4B93-A166-7097BAF075E4}|RSIClientSide\\RSIClientSide.csproj|solutionrelative:rsiclientside\\services\\interfaces\\ireservationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0905FD5-A79F-4B93-A166-7097BAF075E4}|RSIClientSide\\RSIClientSide.csproj|c:\\users\\niedz\\desktop\\projects\\rsiclientside\\rsiclientside\\services\\interfaces\\icarforreservationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0905FD5-A79F-4B93-A166-7097BAF075E4}|RSIClientSide\\RSIClientSide.csproj|solutionrelative:rsiclientside\\services\\interfaces\\icarforreservationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0905FD5-A79F-4B93-A166-7097BAF075E4}|RSIClientSide\\RSIClientSide.csproj|c:\\users\\niedz\\desktop\\projects\\rsiclientside\\rsiclientside\\models\\period.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0905FD5-A79F-4B93-A166-7097BAF075E4}|RSIClientSide\\RSIClientSide.csproj|solutionrelative:rsiclientside\\models\\period.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0905FD5-A79F-4B93-A166-7097BAF075E4}|RSIClientSide\\RSIClientSide.csproj|c:\\users\\niedz\\desktop\\projects\\rsiclientside\\rsiclientside\\dtos\\updatereservationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0905FD5-A79F-4B93-A166-7097BAF075E4}|RSIClientSide\\RSIClientSide.csproj|solutionrelative:rsiclientside\\dtos\\updatereservationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0905FD5-A79F-4B93-A166-7097BAF075E4}|RSIClientSide\\RSIClientSide.csproj|c:\\users\\niedz\\desktop\\projects\\rsiclientside\\rsiclientside\\dtos\\getcardto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0905FD5-A79F-4B93-A166-7097BAF075E4}|RSIClientSide\\RSIClientSide.csproj|solutionrelative:rsiclientside\\dtos\\getcardto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0905FD5-A79F-4B93-A166-7097BAF075E4}|RSIClientSide\\RSIClientSide.csproj|c:\\users\\niedz\\desktop\\projects\\rsiclientside\\rsiclientside\\dtos\\addreservationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0905FD5-A79F-4B93-A166-7097BAF075E4}|RSIClientSide\\RSIClientSide.csproj|solutionrelative:rsiclientside\\dtos\\addreservationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0905FD5-A79F-4B93-A166-7097BAF075E4}|RSIClientSide\\RSIClientSide.csproj|c:\\users\\niedz\\desktop\\projects\\rsiclientside\\rsiclientside\\api\\reservationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0905FD5-A79F-4B93-A166-7097BAF075E4}|RSIClientSide\\RSIClientSide.csproj|solutionrelative:rsiclientside\\api\\reservationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0905FD5-A79F-4B93-A166-7097BAF075E4}|RSIClientSide\\RSIClientSide.csproj|c:\\users\\niedz\\desktop\\projects\\rsiclientside\\rsiclientside\\api\\carsforreservationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0905FD5-A79F-4B93-A166-7097BAF075E4}|RSIClientSide\\RSIClientSide.csproj|solutionrelative:rsiclientside\\api\\carsforreservationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0905FD5-A79F-4B93-A166-7097BAF075E4}|RSIClientSide\\RSIClientSide.csproj|c:\\users\\niedz\\desktop\\projects\\rsiclientside\\rsiclientside\\services\\reservationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0905FD5-A79F-4B93-A166-7097BAF075E4}|RSIClientSide\\RSIClientSide.csproj|solutionrelative:rsiclientside\\services\\reservationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0905FD5-A79F-4B93-A166-7097BAF075E4}|RSIClientSide\\RSIClientSide.csproj|c:\\users\\niedz\\desktop\\projects\\rsiclientside\\rsiclientside\\repositories\\interfaces\\icarreservationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0905FD5-A79F-4B93-A166-7097BAF075E4}|RSIClientSide\\RSIClientSide.csproj|solutionrelative:rsiclientside\\repositories\\interfaces\\icarreservationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CarsForReservationHardCodedRepository.cs",
+              "DocumentMoniker": "C:\\Users\\niedz\\Desktop\\Projects\\RSIClientSide\\RSIClientSide\\Repositories\\CarsForReservationHardCodedRepository.cs",
+              "RelativeDocumentMoniker": "RSIClientSide\\Repositories\\CarsForReservationHardCodedRepository.cs",
+              "ToolTip": "C:\\Users\\niedz\\Desktop\\Projects\\RSIClientSide\\RSIClientSide\\Repositories\\CarsForReservationHardCodedRepository.cs",
+              "RelativeToolTip": "RSIClientSide\\Repositories\\CarsForReservationHardCodedRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-09T11:02:41.115Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "CarsForReservationController.cs",
+              "DocumentMoniker": "C:\\Users\\niedz\\Desktop\\Projects\\RSIClientSide\\RSIClientSide\\API\\CarsForReservationController.cs",
+              "RelativeDocumentMoniker": "RSIClientSide\\API\\CarsForReservationController.cs",
+              "ToolTip": "C:\\Users\\niedz\\Desktop\\Projects\\RSIClientSide\\RSIClientSide\\API\\CarsForReservationController.cs",
+              "RelativeToolTip": "RSIClientSide\\API\\CarsForReservationController.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAACcAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-06T11:03:40.739Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ICarReservationRepository.cs",
+              "DocumentMoniker": "C:\\Users\\niedz\\Desktop\\Projects\\RSIClientSide\\RSIClientSide\\Repositories\\Interfaces\\ICarReservationRepository.cs",
+              "RelativeDocumentMoniker": "RSIClientSide\\Repositories\\Interfaces\\ICarReservationRepository.cs",
+              "ToolTip": "C:\\Users\\niedz\\Desktop\\Projects\\RSIClientSide\\RSIClientSide\\Repositories\\Interfaces\\ICarReservationRepository.cs",
+              "RelativeToolTip": "RSIClientSide\\Repositories\\Interfaces\\ICarReservationRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-06T11:01:55.538Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Period.cs",
+              "DocumentMoniker": "C:\\Users\\niedz\\Desktop\\Projects\\RSIClientSide\\RSIClientSide\\Models\\Period.cs",
+              "RelativeDocumentMoniker": "RSIClientSide\\Models\\Period.cs",
+              "ToolTip": "C:\\Users\\niedz\\Desktop\\Projects\\RSIClientSide\\RSIClientSide\\Models\\Period.cs",
+              "RelativeToolTip": "RSIClientSide\\Models\\Period.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-06T10:32:49.026Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CarForReservation.cs",
+              "DocumentMoniker": "C:\\Users\\niedz\\Desktop\\Projects\\RSIClientSide\\RSIClientSide\\Models\\CarForReservation.cs",
+              "RelativeDocumentMoniker": "RSIClientSide\\Models\\CarForReservation.cs",
+              "ToolTip": "C:\\Users\\niedz\\Desktop\\Projects\\RSIClientSide\\RSIClientSide\\Models\\CarForReservation.cs",
+              "RelativeToolTip": "RSIClientSide\\Models\\CarForReservation.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-06T10:31:36.774Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IReservationService.cs",
+              "DocumentMoniker": "C:\\Users\\niedz\\Desktop\\Projects\\RSIClientSide\\RSIClientSide\\Services\\Interfaces\\IReservationService.cs",
+              "RelativeDocumentMoniker": "RSIClientSide\\Services\\Interfaces\\IReservationService.cs",
+              "ToolTip": "C:\\Users\\niedz\\Desktop\\Projects\\RSIClientSide\\RSIClientSide\\Services\\Interfaces\\IReservationService.cs",
+              "RelativeToolTip": "RSIClientSide\\Services\\Interfaces\\IReservationService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-06T10:22:16.25Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "AddReservationDTO.cs",
+              "DocumentMoniker": "C:\\Users\\niedz\\Desktop\\Projects\\RSIClientSide\\RSIClientSide\\DTOs\\AddReservationDTO.cs",
+              "RelativeDocumentMoniker": "RSIClientSide\\DTOs\\AddReservationDTO.cs",
+              "ToolTip": "C:\\Users\\niedz\\Desktop\\Projects\\RSIClientSide\\RSIClientSide\\DTOs\\AddReservationDTO.cs",
+              "RelativeToolTip": "RSIClientSide\\DTOs\\AddReservationDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-06T10:21:21.578Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "UpdateReservationDTO.cs",
+              "DocumentMoniker": "C:\\Users\\niedz\\Desktop\\Projects\\RSIClientSide\\RSIClientSide\\DTOs\\UpdateReservationDTO.cs",
+              "RelativeDocumentMoniker": "RSIClientSide\\DTOs\\UpdateReservationDTO.cs",
+              "ToolTip": "C:\\Users\\niedz\\Desktop\\Projects\\RSIClientSide\\RSIClientSide\\DTOs\\UpdateReservationDTO.cs",
+              "RelativeToolTip": "RSIClientSide\\DTOs\\UpdateReservationDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-06T10:20:42.144Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CarReservation.cs",
+              "DocumentMoniker": "C:\\Users\\niedz\\Desktop\\Projects\\RSIClientSide\\RSIClientSide\\Models\\CarReservation.cs",
+              "RelativeDocumentMoniker": "RSIClientSide\\Models\\CarReservation.cs",
+              "ToolTip": "C:\\Users\\niedz\\Desktop\\Projects\\RSIClientSide\\RSIClientSide\\Models\\CarReservation.cs",
+              "RelativeToolTip": "RSIClientSide\\Models\\CarReservation.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-06T10:20:04.514Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CarForReservationService.cs",
+              "DocumentMoniker": "C:\\Users\\niedz\\Desktop\\Projects\\RSIClientSide\\RSIClientSide\\Services\\CarForReservationService.cs",
+              "RelativeDocumentMoniker": "RSIClientSide\\Services\\CarForReservationService.cs",
+              "ToolTip": "C:\\Users\\niedz\\Desktop\\Projects\\RSIClientSide\\RSIClientSide\\Services\\CarForReservationService.cs",
+              "RelativeToolTip": "RSIClientSide\\Services\\CarForReservationService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-06T12:10:49.388Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ICarForReservationService.cs",
+              "DocumentMoniker": "C:\\Users\\niedz\\Desktop\\Projects\\RSIClientSide\\RSIClientSide\\Services\\Interfaces\\ICarForReservationService.cs",
+              "RelativeDocumentMoniker": "RSIClientSide\\Services\\Interfaces\\ICarForReservationService.cs",
+              "ToolTip": "C:\\Users\\niedz\\Desktop\\Projects\\RSIClientSide\\RSIClientSide\\Services\\Interfaces\\ICarForReservationService.cs",
+              "RelativeToolTip": "RSIClientSide\\Services\\Interfaces\\ICarForReservationService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-06T16:21:20.281Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "GetCarDTO.cs",
+              "DocumentMoniker": "C:\\Users\\niedz\\Desktop\\Projects\\RSIClientSide\\RSIClientSide\\DTOs\\GetCarDTO.cs",
+              "RelativeDocumentMoniker": "RSIClientSide\\DTOs\\GetCarDTO.cs",
+              "ToolTip": "C:\\Users\\niedz\\Desktop\\Projects\\RSIClientSide\\RSIClientSide\\DTOs\\GetCarDTO.cs",
+              "RelativeToolTip": "RSIClientSide\\DTOs\\GetCarDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-06T10:16:05.078Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CarReservationHardCodedRepository.cs",
+              "DocumentMoniker": "C:\\Users\\niedz\\Desktop\\Projects\\RSIClientSide\\RSIClientSide\\Repositories\\CarReservationHardCodedRepository.cs",
+              "RelativeDocumentMoniker": "RSIClientSide\\Repositories\\CarReservationHardCodedRepository.cs",
+              "ToolTip": "C:\\Users\\niedz\\Desktop\\Projects\\RSIClientSide\\RSIClientSide\\Repositories\\CarReservationHardCodedRepository.cs",
+              "RelativeToolTip": "RSIClientSide\\Repositories\\CarReservationHardCodedRepository.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAQwDwAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-06T13:51:34.317Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ReservationController.cs",
+              "DocumentMoniker": "C:\\Users\\niedz\\Desktop\\Projects\\RSIClientSide\\RSIClientSide\\API\\ReservationController.cs",
+              "RelativeDocumentMoniker": "RSIClientSide\\API\\ReservationController.cs",
+              "ToolTip": "C:\\Users\\niedz\\Desktop\\Projects\\RSIClientSide\\RSIClientSide\\API\\ReservationController.cs",
+              "RelativeToolTip": "RSIClientSide\\API\\ReservationController.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAxwBUAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-06T11:07:58.922Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ReservationService.cs",
+              "DocumentMoniker": "C:\\Users\\niedz\\Desktop\\Projects\\RSIClientSide\\RSIClientSide\\Services\\ReservationService.cs",
+              "RelativeDocumentMoniker": "RSIClientSide\\Services\\ReservationService.cs",
+              "ToolTip": "C:\\Users\\niedz\\Desktop\\Projects\\RSIClientSide\\RSIClientSide\\Services\\ReservationService.cs",
+              "RelativeToolTip": "RSIClientSide\\Services\\ReservationService.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAiwDgAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-06T10:17:21.929Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
