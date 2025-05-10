@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using CarService;
+using Microsoft.AspNetCore.Mvc;
 using RSIClientSide.DTOs;
 using RSIClientSide.Models;
 using RSIClientSide.Services.Interfaces;
@@ -11,44 +12,45 @@ namespace RSIClientSide.API
     {
         private ICarForReservationService carForReservationService;
         private IReservationService reservationService;
+        private ICarCatalogService carCatalogService;
 
-        public CarsForReservationController(ICarForReservationService carForReservationService, IReservationService reservationService)
+        public CarsForReservationController(ICarForReservationService carForReservationService,
+            IReservationService reservationService,
+            ICarCatalogService carCatalogService)
         {
             this.carForReservationService = carForReservationService;
             this.reservationService = reservationService;
+            this.carCatalogService = carCatalogService;
         }
 
         [HttpGet]
-        public IActionResult GetAll()
+        public async Task<IActionResult> GetAll()
         {
-            return Ok(carForReservationService.GetAll());
+            getAllCarsRequest request = new getAllCarsRequest();
+            var result = await carCatalogService.getAllCarsAsync(request);
+            return Ok(result.@return);
         }
 
         [HttpGet("{id}")]
-        public IActionResult GetOne(int id)
+        public async Task<IActionResult> GetOne(int id)
         {
-            var car = carForReservationService.GetOne(id);
-            if (car == null)
+            getCarRequest request = new getCarRequest(id);
+            var result = await carCatalogService.getCarAsync(request);
+            var data = result.@return;
+            if (data == null)
             {
                 return NotFound();
             }
-            return Ok(car);
+            return Ok(data);
         }
 
         [HttpPost("{carId}/reservations")]
-        public IActionResult Reserve(int carId, [FromBody] AddReservationDTO reservation)
+        public async Task<IActionResult> Reserve(int carId, [FromBody] addReservationDTO reservation)
         {
-            reservation.CarId = carId;
-            
-            try
-            {
-                int id = reservationService.ReserveVehicle(reservation);
-                return Ok(id);
-            }
-            catch (ArgumentException ex)
-            {
-                return BadRequest(ex.Message);
-            }
+            reservation.carId = carId;
+            reserveRequest request = new reserveRequest(reservation);
+            var result = await carCatalogService.reserveAsync(request);
+            return Ok(result.@return);
         }
     }
 }

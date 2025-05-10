@@ -1,4 +1,7 @@
-﻿using RSIClientSide.Repositories;
+﻿using CarService;
+using ImageService;
+using RentService;
+using RSIClientSide.Repositories;
 using RSIClientSide.Repositories.Interfaces;
 using RSIClientSide.Services;
 using RSIClientSide.Services.Interfaces;
@@ -18,6 +21,10 @@ builder.Services.AddSingleton<ICarsForReservationRepository, CarsForReservationH
 builder.Services.AddScoped<ICarForReservationService, CarForReservationService>();
 builder.Services.AddSingleton<ICarReservationRepository, CarReservationHardCodedRepository>();
 builder.Services.AddScoped<IReservationService, ReservationService>();
+builder.Services.AddScoped<ICarCatalogService, CarCatalogServiceClient>();
+builder.Services.AddScoped<IImageService, ImageServiceClient>();
+builder.Services.AddScoped<ICarRentalService, CarRentalServiceClient>();
+builder.Services.AddAutoMapper(typeof(Program));
 
 builder.Services.AddCors(options =>
 {

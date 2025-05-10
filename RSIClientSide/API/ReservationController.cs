@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using RentService;
 using RSIClientSide.DTOs;
 using RSIClientSide.Services.Interfaces;
 
@@ -9,34 +10,33 @@ namespace RSIClientSide.API
     public class ReservationController : ControllerBase
     {
         IReservationService reservationService;
+        ICarRentalService carRentalService;
 
-        public ReservationController(IReservationService reservationService)
+        public ReservationController(IReservationService reservationService, 
+            ICarRentalService carRentalService)
         {
             this.reservationService = reservationService;
+            this.carRentalService = carRentalService;
         }
 
         [HttpPatch("{id}")]
-        public IActionResult UpdateReservation(int id, [FromBody] UpdateReservationDTO reservation)
+        public IActionResult UpdateReservation(int id, [FromBody] updateReservationDTO reservation)
         {
             if (reservation == null)
                 return BadRequest("Reservation data is required.");
 
-            reservation.Id = id;
-            try
-            {
-                reservationService.UpdateReservation(reservation);
-                return Ok();
-            }
-            catch (Exception ex)
-            {
-                return BadRequest("Update for this reservation impossible");
-            }
+            reservation.id = id;
+            updateReservationRequest request = new updateReservationRequest(reservation);
+            carRentalService.updateReservationAsync(request);
+            return Ok();
         }
 
         [HttpGet]
-        public IActionResult GetAll()
+        public async Task<IActionResult> GetAll()
         {
-            return Ok(reservationService.GetAll());
+            getAllReservationsRequest request = new getAllReservationsRequest();
+            var result = await carRentalService.getAllReservationsAsync(request);
+            return Ok(result.@return);
         }
     }
 }
