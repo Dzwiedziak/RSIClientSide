@@ -4,6 +4,7 @@ using RSIClientSide.DTOs;
 using RSIClientSide.Handler;
 using RSIClientSide.Models;
 using RSIClientSide.Services.Interfaces;
+using System.Globalization;
 
 namespace RSIClientSide.API
 {
@@ -51,6 +52,14 @@ namespace RSIClientSide.API
         public async Task<IActionResult> Reserve(int carId, [FromBody] addReservationDTO reservation)
         {
             reservation.carId = carId;
+            reservation.period.dateTimeFrom = DateTime.Parse(reservation.period.dateTimeFrom, null, DateTimeStyles.AdjustToUniversal)
+                                     .ToLocalTime()
+                                     .ToString("yyyy-MM-ddTHH:mm:ss");
+
+            reservation.period.dateTimeTo = DateTime.Parse(reservation.period.dateTimeTo, null, DateTimeStyles.AdjustToUniversal)
+                                               .ToLocalTime()
+                                               .ToString("yyyy-MM-ddTHH:mm:ss");
+
             reserveRequest request = new reserveRequest(reservation);
             var result = await carCatalogService.reserveAsync(request);
             return Ok(result.@return);
