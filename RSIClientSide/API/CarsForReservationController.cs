@@ -1,6 +1,7 @@
 ﻿using CarService;
 using Microsoft.AspNetCore.Mvc;
 using RSIClientSide.DTOs;
+using RSIClientSide.Handler;
 using RSIClientSide.Models;
 using RSIClientSide.Services.Interfaces;
 
@@ -21,6 +22,8 @@ namespace RSIClientSide.API
             this.carForReservationService = carForReservationService;
             this.reservationService = reservationService;
             this.carCatalogService = carCatalogService;
+
+            ((CarCatalogServiceClient) carCatalogService).Endpoint.EndpointBehaviors.Add(new MacAddressBehavior());
         }
 
         [HttpGet]
