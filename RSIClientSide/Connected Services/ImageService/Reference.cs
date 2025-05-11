@@ -188,7 +188,7 @@ namespace ImageService
         {
             if ((endpointConfiguration == EndpointConfiguration.ImageServicePort))
             {
-                return new System.ServiceModel.EndpointAddress("http://localhost:8080/ImageService");
+                return new System.ServiceModel.EndpointAddress("http://localhost:8080/GlassFishServer-1.0-SNAPSHOT/ImageServiceService");
             }
             throw new System.InvalidOperationException(string.Format("Nie można znaleźć punktu końcowego o nazwie „{0}”.", endpointConfiguration));
         }

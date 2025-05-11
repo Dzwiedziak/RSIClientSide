@@ -4,6 +4,9 @@ using RSIClientSide.DTOs;
 using RSIClientSide.Handler;
 using RSIClientSide.Models;
 using RSIClientSide.Services.Interfaces;
+using System.Net;
+using System.Security.Cryptography.X509Certificates;
+using System.ServiceModel;
 
 namespace RSIClientSide.API
 {
@@ -23,7 +26,14 @@ namespace RSIClientSide.API
             this.reservationService = reservationService;
             this.carCatalogService = carCatalogService;
 
-            ((CarCatalogServiceClient) carCatalogService).Endpoint.EndpointBehaviors.Add(new MacAddressBehavior());
+            var certificate = new X509Certificate2("C:/Users/niedz/Desktop/RSIProject/client.p12", "changeit");
+
+            var client = carCatalogService as CarCatalogServiceClient;
+            client.ClientCredentials.ClientCertificate.Certificate = certificate;
+            
+            client.Endpoint.EndpointBehaviors.Add(new MacAddressBehavior());
+            client.ClientCredentials.UserName.UserName = "user";
+            client.ClientCredentials.UserName.Password = "user";
         }
 
         [HttpGet]

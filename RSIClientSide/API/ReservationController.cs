@@ -38,5 +38,13 @@ namespace RSIClientSide.API
             var result = await carRentalService.getAllReservationsAsync(request);
             return Ok(result.@return);
         }
+
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> DeleteReservation(int id)
+        {
+            var request = new deleteReservationRequest(id);
+            var result = await carRentalService.deleteReservationAsync(request);
+            return Ok();
+        }
     }
 }

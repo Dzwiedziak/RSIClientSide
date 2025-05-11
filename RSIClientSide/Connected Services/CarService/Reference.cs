@@ -39,46 +39,6 @@ namespace CarService
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://interfaces.api.ws.rsi.com/")]
-    public partial class period
-    {
-        
-        private string dateTimeFromField;
-        
-        private string dateTimeToField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
-        public string dateTimeFrom
-        {
-            get
-            {
-                return this.dateTimeFromField;
-            }
-            set
-            {
-                this.dateTimeFromField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
-        public string dateTimeTo
-        {
-            get
-            {
-                return this.dateTimeToField;
-            }
-            set
-            {
-                this.dateTimeToField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://interfaces.api.ws.rsi.com/")]
     public partial class addReservationDTO
     {
         
@@ -115,64 +75,43 @@ namespace CarService
         }
     }
     
+    /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
-    [System.ServiceModel.ServiceContractAttribute(Namespace="http://interfaces.api.ws.rsi.com/", ConfigurationName="CarService.ICarCatalogService")]
-    public interface ICarCatalogService
-    {
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://interfaces.api.ws.rsi.com/ICarCatalogService/reserveRequest", ReplyAction="http://interfaces.api.ws.rsi.com/ICarCatalogService/reserveResponse")]
-        [System.ServiceModel.FaultContractAttribute(typeof(CarService.Exception), Action="http://interfaces.api.ws.rsi.com/ICarCatalogService/reserve/Fault/Exception", Name="Exception")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        System.Threading.Tasks.Task<CarService.reserveResponse> reserveAsync(CarService.reserveRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://interfaces.api.ws.rsi.com/ICarCatalogService/getCarRequest", ReplyAction="http://interfaces.api.ws.rsi.com/ICarCatalogService/getCarResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        System.Threading.Tasks.Task<CarService.getCarResponse> getCarAsync(CarService.getCarRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://interfaces.api.ws.rsi.com/ICarCatalogService/getAllCarsRequest", ReplyAction="http://interfaces.api.ws.rsi.com/ICarCatalogService/getAllCarsResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        System.Threading.Tasks.Task<CarService.getAllCarsResponse> getAllCarsAsync(CarService.getAllCarsRequest request);
-    }
-    
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="reserve", WrapperNamespace="http://interfaces.api.ws.rsi.com/", IsWrapped=true)]
-    public partial class reserveRequest
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://interfaces.api.ws.rsi.com/")]
+    public partial class period
     {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://interfaces.api.ws.rsi.com/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public CarService.addReservationDTO reservation;
+        private string dateTimeFromField;
         
-        public reserveRequest()
+        private string dateTimeToField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
+        public string dateTimeFrom
         {
+            get
+            {
+                return this.dateTimeFromField;
+            }
+            set
+            {
+                this.dateTimeFromField = value;
+            }
         }
         
-        public reserveRequest(CarService.addReservationDTO reservation)
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
+        public string dateTimeTo
         {
-            this.reservation = reservation;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="reserveResponse", WrapperNamespace="http://interfaces.api.ws.rsi.com/", IsWrapped=true)]
-    public partial class reserveResponse
-    {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://interfaces.api.ws.rsi.com/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int @return;
-        
-        public reserveResponse()
-        {
-        }
-        
-        public reserveResponse(int @return)
-        {
-            this.@return = @return;
+            get
+            {
+                return this.dateTimeToField;
+            }
+            set
+            {
+                this.dateTimeToField = value;
+            }
         }
     }
     
@@ -280,6 +219,100 @@ namespace CarService
         }
     }
     
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+    [System.ServiceModel.ServiceContractAttribute(Namespace="http://interfaces.api.ws.rsi.com/", ConfigurationName="CarService.ICarCatalogService")]
+    public interface ICarCatalogService
+    {
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://interfaces.api.ws.rsi.com/ICarCatalogService/getAllCarsRequest", ReplyAction="http://interfaces.api.ws.rsi.com/ICarCatalogService/getAllCarsResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        System.Threading.Tasks.Task<CarService.getAllCarsResponse> getAllCarsAsync(CarService.getAllCarsRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://interfaces.api.ws.rsi.com/ICarCatalogService/reserveRequest", ReplyAction="http://interfaces.api.ws.rsi.com/ICarCatalogService/reserveResponse")]
+        [System.ServiceModel.FaultContractAttribute(typeof(CarService.Exception), Action="http://interfaces.api.ws.rsi.com/ICarCatalogService/reserve/Fault/Exception", Name="Exception")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        System.Threading.Tasks.Task<CarService.reserveResponse> reserveAsync(CarService.reserveRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://interfaces.api.ws.rsi.com/ICarCatalogService/getCarRequest", ReplyAction="http://interfaces.api.ws.rsi.com/ICarCatalogService/getCarResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        System.Threading.Tasks.Task<CarService.getCarResponse> getCarAsync(CarService.getCarRequest request);
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="getAllCars", WrapperNamespace="http://interfaces.api.ws.rsi.com/", IsWrapped=true)]
+    public partial class getAllCarsRequest
+    {
+        
+        public getAllCarsRequest()
+        {
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="getAllCarsResponse", WrapperNamespace="http://interfaces.api.ws.rsi.com/", IsWrapped=true)]
+    public partial class getAllCarsResponse
+    {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://interfaces.api.ws.rsi.com/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public CarService.getCarDTO[] @return;
+        
+        public getAllCarsResponse()
+        {
+        }
+        
+        public getAllCarsResponse(CarService.getCarDTO[] @return)
+        {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="reserve", WrapperNamespace="http://interfaces.api.ws.rsi.com/", IsWrapped=true)]
+    public partial class reserveRequest
+    {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://interfaces.api.ws.rsi.com/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public CarService.addReservationDTO reservation;
+        
+        public reserveRequest()
+        {
+        }
+        
+        public reserveRequest(CarService.addReservationDTO reservation)
+        {
+            this.reservation = reservation;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="reserveResponse", WrapperNamespace="http://interfaces.api.ws.rsi.com/", IsWrapped=true)]
+    public partial class reserveResponse
+    {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://interfaces.api.ws.rsi.com/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int @return;
+        
+        public reserveResponse()
+        {
+        }
+        
+        public reserveResponse(int @return)
+        {
+            this.@return = @return;
+        }
+    }
+    
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -317,39 +350,6 @@ namespace CarService
         }
         
         public getCarResponse(CarService.getCarDTO @return)
-        {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="getAllCars", WrapperNamespace="http://interfaces.api.ws.rsi.com/", IsWrapped=true)]
-    public partial class getAllCarsRequest
-    {
-        
-        public getAllCarsRequest()
-        {
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="getAllCarsResponse", WrapperNamespace="http://interfaces.api.ws.rsi.com/", IsWrapped=true)]
-    public partial class getAllCarsResponse
-    {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://interfaces.api.ws.rsi.com/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public CarService.getCarDTO[] @return;
-        
-        public getAllCarsResponse()
-        {
-        }
-        
-        public getAllCarsResponse(CarService.getCarDTO[] @return)
         {
             this.@return = @return;
         }
@@ -406,6 +406,18 @@ namespace CarService
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<CarService.getAllCarsResponse> CarService.ICarCatalogService.getAllCarsAsync(CarService.getAllCarsRequest request)
+        {
+            return base.Channel.getAllCarsAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<CarService.getAllCarsResponse> getAllCarsAsync()
+        {
+            CarService.getAllCarsRequest inValue = new CarService.getAllCarsRequest();
+            return ((CarService.ICarCatalogService)(this)).getAllCarsAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<CarService.reserveResponse> CarService.ICarCatalogService.reserveAsync(CarService.reserveRequest request)
         {
             return base.Channel.reserveAsync(request);
@@ -431,18 +443,6 @@ namespace CarService
             return ((CarService.ICarCatalogService)(this)).getCarAsync(inValue);
         }
         
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<CarService.getAllCarsResponse> CarService.ICarCatalogService.getAllCarsAsync(CarService.getAllCarsRequest request)
-        {
-            return base.Channel.getAllCarsAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<CarService.getAllCarsResponse> getAllCarsAsync()
-        {
-            CarService.getAllCarsRequest inValue = new CarService.getAllCarsRequest();
-            return ((CarService.ICarCatalogService)(this)).getAllCarsAsync(inValue);
-        }
-        
         public virtual System.Threading.Tasks.Task OpenAsync()
         {
             return System.Threading.Tasks.Task.Factory.FromAsync(((System.ServiceModel.ICommunicationObject)(this)).BeginOpen(null, null), new System.Action<System.IAsyncResult>(((System.ServiceModel.ICommunicationObject)(this)).EndOpen));
@@ -457,6 +457,7 @@ namespace CarService
                 result.ReaderQuotas = System.Xml.XmlDictionaryReaderQuotas.Max;
                 result.MaxReceivedMessageSize = int.MaxValue;
                 result.AllowCookies = true;
+                result.Security.Mode = System.ServiceModel.BasicHttpSecurityMode.Transport;
                 return result;
             }
             throw new System.InvalidOperationException(string.Format("Nie można znaleźć punktu końcowego o nazwie „{0}”.", endpointConfiguration));
@@ -466,7 +467,8 @@ namespace CarService
         {
             if ((endpointConfiguration == EndpointConfiguration.CarCatalogServicePort))
             {
-                return new System.ServiceModel.EndpointAddress("http://localhost:8080/CarCatalogService");
+                return new System.ServiceModel.EndpointAddress("https://desktop-se690ha:8181/GlassFishServer-1.0-SNAPSHOT/CarCatalogServiceServic" +
+                        "e");
             }
             throw new System.InvalidOperationException(string.Format("Nie można znaleźć punktu końcowego o nazwie „{0}”.", endpointConfiguration));
         }

@@ -1,7 +1,7 @@
 {
   "ExtendedData": {
     "inputs": [
-      "http://localhost:8080/CarRentalService?wsdl"
+      "http://localhost:8080/GlassFishServer-1.0-SNAPSHOT/CarRentalServiceService?wsdl"
     ],
     "collectionTypes": [
       "System.Array",

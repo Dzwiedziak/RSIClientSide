@@ -129,6 +129,12 @@ namespace RentService
         [System.ServiceModel.OperationContractAttribute(Action="http://interfaces.api.ws.rsi.com/ICarRentalService/getAllReservationsRequest", ReplyAction="http://interfaces.api.ws.rsi.com/ICarRentalService/getAllReservationsResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         System.Threading.Tasks.Task<RentService.getAllReservationsResponse> getAllReservationsAsync(RentService.getAllReservationsRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://interfaces.api.ws.rsi.com/ICarRentalService/deleteReservationRequest", ReplyAction="http://interfaces.api.ws.rsi.com/ICarRentalService/deleteReservationResponse")]
+        [System.ServiceModel.FaultContractAttribute(typeof(RentService.Exception), Action="http://interfaces.api.ws.rsi.com/ICarRentalService/deleteReservation/Fault/Except" +
+            "ion", Name="Exception")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        System.Threading.Tasks.Task<RentService.deleteReservationResponse> deleteReservationAsync(RentService.deleteReservationRequest request);
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -253,6 +259,39 @@ namespace RentService
         }
     }
     
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="deleteReservation", WrapperNamespace="http://interfaces.api.ws.rsi.com/", IsWrapped=true)]
+    public partial class deleteReservationRequest
+    {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://interfaces.api.ws.rsi.com/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int id;
+        
+        public deleteReservationRequest()
+        {
+        }
+        
+        public deleteReservationRequest(int id)
+        {
+            this.id = id;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="deleteReservationResponse", WrapperNamespace="http://interfaces.api.ws.rsi.com/", IsWrapped=true)]
+    public partial class deleteReservationResponse
+    {
+        
+        public deleteReservationResponse()
+        {
+        }
+    }
+    
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
     public interface ICarRentalServiceChannel : RentService.ICarRentalService, System.ServiceModel.IClientChannel
     {
@@ -328,6 +367,19 @@ namespace RentService
             return ((RentService.ICarRentalService)(this)).getAllReservationsAsync(inValue);
         }
         
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<RentService.deleteReservationResponse> RentService.ICarRentalService.deleteReservationAsync(RentService.deleteReservationRequest request)
+        {
+            return base.Channel.deleteReservationAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<RentService.deleteReservationResponse> deleteReservationAsync(int id)
+        {
+            RentService.deleteReservationRequest inValue = new RentService.deleteReservationRequest();
+            inValue.id = id;
+            return ((RentService.ICarRentalService)(this)).deleteReservationAsync(inValue);
+        }
+        
         public virtual System.Threading.Tasks.Task OpenAsync()
         {
             return System.Threading.Tasks.Task.Factory.FromAsync(((System.ServiceModel.ICommunicationObject)(this)).BeginOpen(null, null), new System.Action<System.IAsyncResult>(((System.ServiceModel.ICommunicationObject)(this)).EndOpen));
@@ -351,7 +403,7 @@ namespace RentService
         {
             if ((endpointConfiguration == EndpointConfiguration.CarRentalServicePort))
             {
-                return new System.ServiceModel.EndpointAddress("http://localhost:8080/CarRentalService");
+                return new System.ServiceModel.EndpointAddress("http://localhost:8080/GlassFishServer-1.0-SNAPSHOT/CarRentalServiceService");
             }
             throw new System.InvalidOperationException(string.Format("Nie można znaleźć punktu końcowego o nazwie „{0}”.", endpointConfiguration));
         }
