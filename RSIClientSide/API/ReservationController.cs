@@ -2,6 +2,7 @@
 using RentService;
 using RSIClientSide.DTOs;
 using RSIClientSide.Services.Interfaces;
+using System.Globalization;
 
 namespace RSIClientSide.API
 {
@@ -26,6 +27,13 @@ namespace RSIClientSide.API
                 return BadRequest("Reservation data is required.");
 
             reservation.id = id;
+            reservation.period.dateTimeFrom = DateTime.Parse(reservation.period.dateTimeFrom, null, DateTimeStyles.AdjustToUniversal)
+                                     .ToLocalTime()
+                                     .ToString("yyyy-MM-ddTHH:mm:ss");
+
+            reservation.period.dateTimeTo = DateTime.Parse(reservation.period.dateTimeTo, null, DateTimeStyles.AdjustToUniversal)
+                                               .ToLocalTime()
+                                               .ToString("yyyy-MM-ddTHH:mm:ss");
             updateReservationRequest request = new updateReservationRequest(reservation);
             carRentalService.updateReservationAsync(request);
             return Ok();
